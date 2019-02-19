@@ -34,4 +34,12 @@ stdenv.mkDerivation rec {
   mesonFlags = [
     "-Dkiwmi-version=${version}"
   ];
+
+  meta = with stdenv.lib; {
+    description = "A client controlled Wayland compositor";
+    homepage = https://github.com/buffet/kiwmi;
+    license = licenses.mpl20;
+    platforms = platforms.unix;
+    maintainers = with maintainers; [ buffet ];
+  };
 }
