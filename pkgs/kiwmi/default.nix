@@ -4,7 +4,7 @@
 
 stdenv.mkDerivation rec {
   name = "kiwmi-${version}";
-  version = "2019-02-19.1";
+  version = "20190219.0";
 
   src = fetchFromGitHub {
     owner = "buffet";
